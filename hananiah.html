@@ -3,10 +3,10 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>function speakthis(what){ alert(what);
-        if (window.speechSynthesis !== undefined) {
+
             var utterance = new SpeechSynthesisUtterance(what);
             window.speechSynthesis.speak(utterance);
-        } }
+         }
 </script>
 </head>
 <body>
