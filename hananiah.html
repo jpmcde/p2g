@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Hananiah</title>
+<head>
+<script>
+        if (window.speechSynthesis !== undefined) {
+            var text = $('.kathy1').html();
+            var utterance = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(utterance);
+        }
+</script>
+</head>
+<body>
+<p class="kathy1">My name is Kathy Lee Corton.</p>
+
+</body>
+</html>
