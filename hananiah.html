@@ -5,13 +5,13 @@
 
 </head>
 <body>
-<p class="kathy1">My name is Kathy Lee Corton.</p>
+<button class="kathy1" onClick="speakthis('My Name is Kathy Lee Corton');"My name is Kathy Lee Corton.</button>
 
 </body>
 </html>
-<script>
+<script>function speakthis(what){
         if (window.speechSynthesis !== undefined) {
-            var text = $('.kathy1').html();
+            var text = what;
             var utterance = new SpeechSynthesisUtterance(text);
             window.speechSynthesis.speak(utterance);
         }
