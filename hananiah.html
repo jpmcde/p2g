@@ -2,16 +2,16 @@
 <title>Hananiah</title>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>function speakthis(what){ alert(what);
-
-            var utterance = new SpeechSynthesisUtterance('My Name is Kathy Lee Corton');
-            window.speechSynthesis.speak(utterance);
-         }
+<script>
+function speakthis(say){ 
+    if('speechSynthesis' in window){
+        var speech = new SpeechSynthesisUtterance(say);
+        speech.lang = 'en-US';
+        window.speechSynthesis.speak(speech); } }
 </script>
 </head>
 <body>
-<button class="kathy1" onClick="speakthis('My Name is Kathy Lee Corton');">My name is Kathy Lee Corton.</button>
+<button class="kathy1" onClick="speakthis('My Name is Rasheed and I am back to make my ultimate sound board');">Speak the truth</button>
 
 </body>
 </html>
-
