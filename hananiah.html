@@ -7,7 +7,7 @@ function speakthis(say){
     if('speechSynthesis' in window){
         var speech = new SpeechSynthesisUtterance(say);
         speech.lang = 'en-US';
-        speech.pitch = '1';
+        speech.pitch = 0;
         window.speechSynthesis.speak(speech); } }
 </script>
 </head>
