@@ -7,11 +7,12 @@ function speakthis(say){
     if('speechSynthesis' in window){
         var speech = new SpeechSynthesisUtterance(say);
         speech.lang = 'en-US';
+        speech.pitch = '1';
         window.speechSynthesis.speak(speech); } }
 </script>
 </head>
 <body>
-<button class="kathy1" onClick="speakthis('My Name is Rasheed and I am back to make my ultimate sound board');">Speak the truth</button>
+<button class="kathy1" onClick="speakthis('My Name is Rasheed and I am back to make my ultimate sound board');">Speak please</button>
 
 </body>
 </html>
